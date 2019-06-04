@@ -44,9 +44,14 @@ A closure is a inner funciton that has access to the outer function variable, cr
 
 4. Describe the four rules of the 'this' keyword.
 
+-When in the global scope, the value of “this” will be the window/console Object
+-Whenever a function is called by a preceding dot, the object before that dot is this
+-Whenever a constructor function is used, this refers to the specific instance of the object that is created and returned by the constructor function
+-Whenever JavaScript’s call or apply method is used, this is explicitly defined
+
 This in a method refers to the owner of the method, including objects. 
 When this is used alone, it refers to the global object.
-In a function, the ownder of the function is what is binded by this. 
+In a function, the owner of the function is what is binded by this. 
 In strict mode, it cannot bind is this is undefined
 
 
